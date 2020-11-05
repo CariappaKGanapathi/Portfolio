@@ -40,6 +40,8 @@ nav ul{
 	list-style: none;
 	margin-right: 80px;
 
+
+
 }
 
 .nav-items li a{
@@ -49,6 +51,13 @@ nav ul{
 	font-size: 24px;
 	color: #222831;
 	text-decoration: none;
+	display: inline-block;
+	transition: .3s;
+}
+
+.nav-items li a:hover{
+	color: #C7C7C7;
+	transform: translateY(-5px);
 }
 
 /* Header */
