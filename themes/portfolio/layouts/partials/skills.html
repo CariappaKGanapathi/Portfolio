@@ -1,0 +1,17 @@
+<section id="skills" class="section">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      {{ range .Site.Data.skills.categories }}
+      <div class="card skill-category">
+        <h4>{{ .name }}</h4>
+        <div class="skill-tags">
+          {{ range .items }}
+          <span class="badge outline">{{ . }}</span>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

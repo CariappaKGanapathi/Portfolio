@@ -1,0 +1,11 @@
+<footer>
+  <div class="footer-content container">
+    <p>&copy; {{ now.Year }} {{ .Site.Params.name }}</p>
+    <p class="footer-built">Built with <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> &amp; <a href="https://oat.ink" target="_blank" rel="noopener">Oat UI</a></p>
+    <div class="social-links">
+      {{ with .Site.Params.github }}<a href="{{ . }}" target="_blank" rel="noopener">GitHub</a>{{ end }}
+      {{ with .Site.Params.linkedin }}<a href="{{ . }}" target="_blank" rel="noopener">LinkedIn</a>{{ end }}
+      {{ with .Site.Params.email }}<a href="mailto:{{ . }}">Email</a>{{ end }}
+    </div>
+  </div>
+</footer>

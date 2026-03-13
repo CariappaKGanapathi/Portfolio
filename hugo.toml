@@ -1,0 +1,17 @@
+baseURL = 'https://cariappa.dev/'
+languageCode = 'en-us'
+title = 'Cariappa K Ganapathi'
+theme = 'portfolio'
+
+[params]
+  name = 'Cariappa K Ganapathi'
+  role = 'Backend Engineer'
+  tagline = 'I build robust, scalable backend systems with Go, Python, Kafka, and Postgres.'
+  email = 'adityacariappa@gmail.com'
+  github = 'https://github.com/CariappaKGanapathi'
+  linkedin = 'https://www.linkedin.com/in/kgcariappa/'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

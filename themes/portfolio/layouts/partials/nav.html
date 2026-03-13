@@ -1,0 +1,17 @@
+<header class="nav-wrapper">
+  <nav data-topnav class="container">
+    <div class="nav-links">
+      <a href="{{ "/" | relURL }}#experience">Experience</a>
+      <a href="{{ "/" | relURL }}#projects">Projects</a>
+      <a href="{{ "/" | relURL }}#skills">Skills</a>
+      <a href="{{ "blog/" | relURL }}">Blog</a>
+      <a href="{{ "/" | relURL }}#contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <span class="theme-icon"></span>
+      </button>
+      <button class="nav-hamburger outline small" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+</header>

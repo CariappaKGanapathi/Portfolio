@@ -1,0 +1,19 @@
+<section id="contact" class="section">
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="card contact-card">
+      <p>I'm always open to discussing backend architecture, distributed systems, or interesting engineering challenges.</p>
+      <div class="contact-links">
+        {{ with .Site.Params.email }}
+        <a href="mailto:{{ . }}" role="button" data-variant="primary">Email Me</a>
+        {{ end }}
+        {{ with .Site.Params.github }}
+        <a href="{{ . }}" target="_blank" rel="noopener" role="button" class="outline">GitHub</a>
+        {{ end }}
+        {{ with .Site.Params.linkedin }}
+        <a href="{{ . }}" target="_blank" rel="noopener" role="button" class="outline">LinkedIn</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

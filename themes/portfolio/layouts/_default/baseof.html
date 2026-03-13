@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.tagline }}{{ end }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.tagline }}{{ end }}">
+  <meta property="og:type" content="website">
+
+  <!-- Oat UI -->
+  <link rel="stylesheet" href="https://unpkg.com/@knadh/oat@0.4.2/oat.min.css">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+
+  <!-- Prevent flash: set saved theme before paint -->
+  <script>
+    (function(){
+      var s = localStorage.getItem('theme');
+      if (s) {
+        document.documentElement.style.colorScheme = s;
+        document.documentElement.setAttribute('data-theme', s);
+      }
+    })();
+  </script>
+</head>
+<body>
+  {{ partial "nav.html" . }}
+
+  <main class="site-main">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  <!-- Oat JS (no defer needed, at end of body) -->
+  <script src="https://unpkg.com/@knadh/oat@0.4.2/oat.min.js"></script>
+  <!-- Theme toggle (loads after Oat so we get last word) -->
+  <script src="{{ "js/theme.js" | relURL }}"></script>
+</body>
+</html>

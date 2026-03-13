@@ -1,0 +1,31 @@
+<section id="experience" class="section">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+    {{ range .Site.Data.experience.jobs }}
+    <div class="card experience-card">
+      <div class="experience-header">
+        <div>
+          <h3>{{ .role }}</h3>
+          <p class="company">{{ .company }}</p>
+        </div>
+        <span class="badge">{{ .period }}</span>
+      </div>
+      {{ range .highlights }}
+      <details class="experience-project">
+        <summary>
+          <strong>{{ .title }}</strong>
+          {{ with .tech }}<span class="tech-inline">{{ range . }}<span class="badge outline small">{{ . }}</span> {{ end }}</span>{{ end }}
+        </summary>
+        <ul>
+          {{ range .points }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </details>
+      {{ end }}
+    </div>
+    {{ end }}
+    </div>
+  </div>
+</section>

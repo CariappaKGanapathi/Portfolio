@@ -1,0 +1,19 @@
+[[categories]]
+name = "Languages"
+items = ["Golang", "Python"]
+
+[[categories]]
+name = "Databases"
+items = ["PostgreSQL", "Cassandra", "MySQL", "Clickhouse", "Redis"]
+
+[[categories]]
+name = "Message Queues & Async"
+items = ["Kafka", "SNS & SQS", "Temporal", "River"]
+
+[[categories]]
+name = "Infrastructure & Tools"
+items = ["Docker", "S3", "Prometheus", "Grafana"]
+
+[[categories]]
+name = "Patterns & Architecture"
+items = ["Distributed Systems", "CDC Pipelines", "PubSub", "Webhooks", "Microservices"]

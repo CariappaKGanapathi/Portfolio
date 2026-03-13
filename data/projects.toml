@@ -1,0 +1,16 @@
+[[items]]
+title = "PubSub Library for Microservices"
+description = "Open source Go library providing a PubSub architecture for asynchronous communication between internal microservices, with adapters for SNS and SQS."
+tech = ["Golang", "SNS", "SQS", "Open Source"]
+github = "https://github.com/Orange-Health/pubsublib"
+
+[[items]]
+title = "Options Payoff Graph"
+description = "An options payoff graph application to help traders analyze and study their positions without needing Excel to generate the graphs themselves."
+tech = ["Python", "Analytics", "Finance"]
+github = "https://github.com/TradeMythBuster/Stock-Options-Graph"
+
+[[items]]
+title = "Webhook Service (Orange Health)"
+description = "In-house webhook service delivering 44.5 lakh+ events with real-time updates via SNS/SQS, powering partnerships with Ultrahuman, Eka Care, and more."
+tech = ["Golang", "SNS", "SQS", "Webhooks"]

@@ -1,0 +1,72 @@
+[[jobs]]
+company = "Superleap"
+role = "Software Development Engineer 2 | Founding Member | Back End"
+period = "Oct 2024 - Present"
+
+  [[jobs.highlights]]
+  title = "Asynchronous Architecture"
+  tech = ["Kafka", "Cassandra", "Postgres", "Redis", "Golang"]
+  points = [
+    "Architected and built data pipelines to capture all audit-data changes from main DB (Postgres) to secondary DB (Cassandra) using Kafka for message queues and Go consumers to transform data and insert.",
+    "Built Kafka consumers in Go capable of processing over 1 million events in 30 seconds.",
+    "Added and maintained monitoring of all programs deployed along with infrastructure monitoring using Prometheus and Grafana.",
+    "Created APIs for clients to poll their data changes using a cursor-and-limit method instead of webhooks.",
+    "Set up River for async tasks and added graceful shutdowns to all backend applications.",
+  ]
+
+  [[jobs.highlights]]
+  title = "Performance — Redis & Local Cache"
+  tech = ["Redis", "Golang", "Distributed Systems"]
+  points = [
+    "Leveraged Redis client tracking to build local cache for distributed systems with invalidation logic, reducing latency from milliseconds (Redis) to nanoseconds (local cache).",
+    "Built APIs to transform and run client queries while adding multi-tenancy support and core business logic.",
+  ]
+
+  [[jobs.highlights]]
+  title = "Analytics — Clickhouse"
+  tech = ["Clickhouse", "Postgres", "Golang"]
+  points = [
+    "Set up data pipeline from Postgres to Clickhouse for clients to run analytics on.",
+    "Built APIs to transform and run client queries with multi-tenancy support and internal business logic.",
+  ]
+
+  [[jobs.highlights]]
+  title = "Workflow Builder"
+  tech = ["Temporal", "Kafka", "Postgres", "CDC Pipeline", "Golang"]
+  points = [
+    "Designed workflow builder and workers in Go using Temporal.",
+    "Built and maintained a drag-and-drop workflow system with SLAs of 99.9% successful runs, running over 2.2 million complex workflows per day.",
+  ]
+
+[[jobs]]
+company = "Orange Health"
+role = "Software Development Engineer 1 | Back End"
+period = "May 2022 - Oct 2024"
+
+  [[jobs.highlights]]
+  title = "Partnerships & Webhooks"
+  tech = ["SNS", "SQS", "Golang", "Asynchronous Architecture"]
+  points = [
+    "Led technical architecture and maintained APIs for companies to partner with Orange Health to place and track orders.",
+    "Ideated and developed a webhook service from scratch, enabling partners to scale orders via real-time updates with SNS and SQS, replacing polling.",
+    "Over 44.5 lakh webhook events sent successfully with just 1 P0 incident over a year.",
+    "Directly helped close critical partnerships with Ultrahuman, GetVisit, Eka Care, taking the vertical's revenue from 0.6 to 1.1 Cr/month in 4 months.",
+  ]
+
+  [[jobs.highlights]]
+  title = "Central Price Management System"
+  tech = ["MySQL", "Redis", "Golang"]
+  points = [
+    "Architected a central pricing management system to view and adjust test/package pricing for 3000+ active partners and doctors.",
+    "Simplified management from 1000s of pricelists to just 5-10 using a pyramid-like template system.",
+  ]
+
+  [[jobs.highlights]]
+  title = "Ledger & Withdrawal for Doctors"
+  tech = ["Razorpay", "Golang", "Asynchronous Architecture"]
+  points = [
+    "Built an on-demand withdrawal feature for doctors, a better alternative to cyclic settlements.",
+    "Created a real-time ledger system for doctors to track orders and earnings with atomic transactions.",
+    "Implemented real-time revenue tracking for anomaly detection and future growth projections.",
+    "Generated 70% more doctor retention and played a pivotal role in closing new doctors.",
+  ]
