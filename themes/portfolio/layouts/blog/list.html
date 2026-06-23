@@ -1,4 +1,19 @@
 {{ define "main" }}
+{{ $posts := where .Pages "Type" "blog" }}
+{{ if $posts }}
+<section class="blog-list">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ range $posts.ByDate.Reverse }}
+    <article class="post-summary">
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      {{ with .Date }}<time class="post-date" datetime="{{ .Format "2006-01-02" }}">{{ .Format "Jan 2, 2006" }}</time>{{ end }}
+      <p>{{ with .Params.summary }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ else }}
 <section class="coming-soon">
   <div class="container">
     <div class="icon">✍️</div>
@@ -8,4 +23,5 @@
     <a href="{{ "/" | relURL }}" role="button" class="secondary">Back to Home</a>
   </div>
 </section>
+{{ end }}
 {{ end }}

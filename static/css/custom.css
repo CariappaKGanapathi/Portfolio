@@ -334,6 +334,123 @@
   margin-bottom: 1.5rem;
 }
 
+/* --- Blog list --- */
+.blog-list {
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.blog-list > .container > h1 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.post-summary {
+  padding-bottom: 1.75rem;
+  margin-bottom: 1.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-summary:last-child {
+  border-bottom: none;
+}
+
+.post-summary h2 {
+  font-size: 1.3rem;
+  margin: 0 0 0.35rem;
+}
+
+.post-summary p {
+  color: var(--muted-foreground);
+  line-height: 1.6;
+  margin: 0.5rem 0 0;
+}
+
+.post-date {
+  display: block;
+  color: var(--muted-foreground);
+  font-size: 0.85rem;
+}
+
+/* --- Blog post --- */
+.post {
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.post article {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.post-header {
+  margin-bottom: 2.5rem;
+}
+
+.post-header h1 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
+}
+
+.post-body {
+  line-height: 1.75;
+  color: var(--foreground);
+}
+
+.post-body h2 {
+  font-size: 1.5rem;
+  margin: 2.5rem 0 1rem;
+}
+
+.post-body h3 {
+  font-size: 1.2rem;
+  margin: 2rem 0 0.75rem;
+}
+
+.post-body p {
+  margin: 0 0 1.25rem;
+}
+
+.post-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.post-body figure {
+  margin: 1.5rem 0;
+}
+
+.post-body figure figcaption {
+  text-align: center;
+  color: var(--muted-foreground);
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.post-body pre {
+  overflow-x: auto;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+
+.post-body blockquote {
+  border-left: 3px solid var(--border);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  color: var(--muted-foreground);
+}
+
+.post-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
 /* --- Footer --- */
 footer {
   border-top: 1px solid var(--border);
